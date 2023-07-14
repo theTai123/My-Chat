@@ -65,11 +65,22 @@
     let btn = document.getElementById("btn");
     let chat = document.getElementById("box-chat");
 
+    input.addEventListener("keydown",(event)=>{
+        if(event.keyCode===13){
+            let mess=input.value;
+                if(mess!==""){
+                    ghiDuLieu(mess)
+                    input.value="";
+            }
+        }
+    });
+
     btn.addEventListener("click",()=>{
         let mess = input.value;
-        ghiDuLieu(mess)
-        input.value="";
-
+        if(mess!==""){
+            ghiDuLieu(mess)
+            input.value="";
+        }
     });
   </script>
 </html>
