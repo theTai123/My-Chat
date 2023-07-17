@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My Chat App</h1>
-    <div class="box">
-        <div class="box-chat">
-            <h2>BOX CHAT</h2>
-            <ul id="box-chat">
-                <li>HEllO</li>
-            </ul>
+    <div class="wrapper">
+        <div class="color" id="color">
+            <button class="white active"><ion-icon name="sunny"></ion-icon></ion-icon></button>
+            <button class="dark"><ion-icon name="moon"></ion-icon></button>
+            <button class="rainbow"></button>
+            <div class="indicator"></div>
         </div>
-        <div class="input">
-            <input id="input" type="text" placeholder="Send Message">
-            <button id="btn">Send</button>
+        <h1>My Chat App</h1>
+        <div class="box">
+            <div class="box-chat">
+                <h2>BOX CHAT</h2>
+                <ul id="box-chat">
+                    <li>HEllO</li>
+                </ul>
+            </div>
+            <div class="input">
+                <input id="input" type="text" placeholder="Send Message">
+                <button id="btn">Send</button>
+            </div>
         </div>
     </div>
 </body>
@@ -83,4 +91,7 @@
         }
     });
   </script>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
